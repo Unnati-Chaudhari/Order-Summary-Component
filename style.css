@@ -1,0 +1,413 @@
+* {
+  margin: 0%;
+  padding: 0%;
+  font-family: "Red Hat Display", sans-serif;
+}
+
+.main_container {
+  height: 100vh;
+  background-color: hsl(225, 100%, 94%);
+  display: flex;
+
+  align-items: flex-start;
+  justify-content: center;
+  position: relative;
+}
+
+.background_container {
+  height: 65vh;
+  width: 100vw;
+  z-index: 0;
+  background-image: url("images/pattern-background-desktop.svg");
+  background-size: cover;
+}
+
+.main_card {
+  height: 80vh;
+  width: 27vw;
+  z-index: 1;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: 1rem;
+  box-shadow: 0 1rem 1.3rem hsla(245, 75%, 52%, 0.25);
+}
+
+.img_div {
+  height: 28vh;
+  width: 27vw;
+  background-image: url("images/illustration-hero.svg");
+  background-size: cover;
+  border-radius: 1rem 1rem 0 0;
+}
+
+.info_div {
+  height: 52vh;
+  width: 27vw;
+  background-color: hsl(225, 100%, 98%);
+  border-radius: 0 0 1rem 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.content_div {
+  height: 45vh;
+  width: 21vw;
+  background-color: hsl(225, 100%, 98%);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+h1 {
+  color: hsl(223, 47%, 23%);
+  font-weight: 900;
+}
+
+.info_para {
+  text-align: center;
+  margin-top: 1rem;
+  line-height: 1.4rem;
+  font-size: 1.2rem;
+  color: hsl(224, 23%, 55%);
+}
+
+.annual_plan {
+  height: 8.89vh;
+  width: 21.5vw;
+  background-color: hsl(225, 100%, 94%, 0.3);
+  border-radius: 0.5rem;
+  margin-top: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.music_icon {
+  height: 7vh;
+  width: 3.33vw;
+  margin-left: 1rem;
+  border-radius: 50%;
+  background-image: url("images/icon-music.svg");
+}
+
+.amt {
+  height: 7vh;
+  width: 11.11vw;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+}
+
+.annual {
+  font-size: 1.2rem;
+  margin-left: 1.2rem;
+  margin-top: 0.1rem;
+  font-weight: 800;
+  color: hsl(223, 47%, 23%);
+}
+
+.amt_yr {
+  font-size: 1.1rem;
+  margin-top: 0.2rem;
+  margin-left: 1.2rem;
+  font-weight: 600;
+  color: hsl(224, 23%, 55%);
+}
+
+.change {
+  height: 7vh;
+  width: 6.11vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 1rem;
+  font-weight: 700;
+  text-decoration: underline;
+  color: hsl(245, 75%, 52%);
+}
+
+a {
+  cursor: pointer;
+}
+
+.proceed {
+  height: 7vh;
+  width: 23.33vw;
+  border-radius: 0.5rem;
+  background-color: hsl(245, 75%, 52%);
+  border: none;
+  margin-top: 1rem;
+  color: hsl(225, 100%, 98%);
+  font-size: 1rem;
+  font-weight: 800;
+  cursor: pointer;
+  outline: none;
+  box-shadow: 0 1rem 1.3rem hsla(245, 75%, 52%, 0.25);
+  transition: 0.2s ease;
+}
+
+.cancle {
+  height: 7vh;
+  width: 23.33vw;
+  border-radius: 0.5rem;
+  cursor: pointer;
+  background-color: transparent;
+  border: none;
+  margin-top: 1rem;
+  font-size: 1rem;
+  font-weight: 800;
+  color: hsl(224, 23%, 55%);
+}
+
+/* media queris */
+
+/* media queries for mobile */
+@media (max-width: 48rem) {
+  .main_container {
+    min-height: 100vh;
+  }
+
+  .background_container {
+    height: 35vh;
+    width: 100vw;
+    background-image: url("images/pattern-background-mobile.svg");
+    background-size: cover;
+  }
+
+  .main_card {
+    width: 87vw;
+    height: auto;
+    top: 50%;
+  }
+
+  .img_div {
+    width: 100%;
+    height: 27vh;
+    background-size: cover;
+  }
+
+  .info_div {
+    width: 100%;
+    height: auto;
+    min-height: 53vh;
+    padding: 2rem 0;
+  }
+
+  .content_div {
+    width: 80%;
+    height: auto;
+  }
+
+  h1 {
+    font-size: 1.5rem;
+  }
+
+  .info_para {
+    font-size: 0.95rem;
+    line-height: 1.5rem;
+    margin-top: 0.8rem;
+  }
+
+  .annual_plan {
+    width: 100%;
+    height: 5rem;
+    margin-top: 1.2rem;
+  }
+
+  .music_icon {
+    width: 3rem;
+    height: 3rem;
+    margin-left: 0.7rem;
+    background-size: contain;
+    background-repeat: no-repeat;
+    flex-shrink: 0;
+  }
+
+  .amt {
+    width: auto;
+    flex: 1;
+    height: 4rem;
+  }
+
+  .annual {
+    font-size: 0.9rem;
+    margin-left: 0.8rem;
+  }
+
+  .amt_yr {
+    font-size: 0.9rem;
+    margin-left: 0.8rem;
+  }
+
+  .change {
+    width: auto;
+    margin-right: 0.7rem;
+    font-size: 0.85rem;
+  }
+
+  .proceed,
+  .cancle {
+    width: 100%;
+    height: 3.5rem;
+    font-size: 0.95rem;
+  }
+
+  .proceed {
+    margin-top: 1.2rem;
+  }
+
+  .cancle {
+    margin-top: 0.7rem;
+  }
+}
+
+/* media queries for tablet */
+@media (min-width: 48rem) and (max-width: 60rem) {
+  .background_container {
+    height: 55vh;
+  }
+
+  .main_card {
+    width: 55vw;
+    height: auto;
+  }
+
+  .img_div {
+    width: 100%;
+    height: 28vh;
+  }
+
+  .info_div {
+    width: 100%;
+    height: auto;
+    min-height: 52vh;
+    padding: 2rem 0;
+  }
+
+  .content_div {
+    width: 78%;
+    height: auto;
+  }
+
+  h1 {
+    font-size: 1.8rem;
+  }
+
+  .info_para {
+    font-size: 1rem;
+    line-height: 1.5rem;
+  }
+
+  .annual_plan {
+    width: 100%;
+    height: 5.5rem;
+  }
+
+  .music_icon {
+    width: 3.5rem;
+    height: 3.5rem;
+    background-size: contain;
+    background-repeat: no-repeat;
+  }
+
+  .amt {
+    width: auto;
+    flex: 1;
+  }
+
+  .change {
+    width: auto;
+    margin-right: 1rem;
+  }
+
+  .proceed,
+  .cancle {
+    width: 100%;
+    height: 3.5rem;
+  }
+}
+
+/* media queries for small laptop */
+@media (min-width: 60.01rem) and (max-width: 75rem) {
+  .main_card {
+    width: 35vw;
+    height: auto;
+  }
+
+  .img_div {
+    width: 100%;
+    height: 28vh;
+  }
+
+  .info_div {
+    width: 100%;
+    height: auto;
+    min-height: 52vh;
+    padding: 1.5rem 0;
+  }
+
+  .content_div {
+    width: 78%;
+    height: auto;
+  }
+
+  .info_para {
+    font-size: 1rem;
+  }
+
+  .annual_plan {
+    width: 100%;
+    height: 5.5rem;
+  }
+
+  .music_icon {
+    width: 3.5rem;
+    height: 3.5rem;
+    background-size: contain;
+    background-repeat: no-repeat;
+  }
+
+  .amt {
+    flex: 1;
+    width: auto;
+  }
+
+  .change {
+    width: auto;
+  }
+
+  .proceed,
+  .cancle {
+    width: 100%;
+    height: 3.5rem;
+  }
+}
+
+@media (min-width: 75.01rem) {
+  .main_card {
+    width: 27vw;
+  }
+
+  .img_div {
+    width: 100%;
+  }
+
+  .info_div {
+    width: 100%;
+  }
+
+  .content_div {
+    width: 78%;
+  }
+
+  .proceed,
+  .cancle {
+    width: 100%;
+  }
+}
